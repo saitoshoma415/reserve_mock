@@ -1,0 +1,35 @@
+.fc-event {
+  height:20px;
+  position:relative;
+  padding-left:18px !important;
+  line-height:20px !important;
+}
+.all_day_event {
+  background-color:#aa0000 !important;
+  border: 1px solid #aa0000 !important;
+}
+
+.long_event {
+  background-color:#00aa00 !important;
+  border: 1px solid #00aa00 !important;
+}
+
+.all_day_event:before, .long_event:before {
+  content:"x";
+  position:absolute;
+  left:2px;
+  top:2px;
+  color:#00aa00;
+  background-color:#006600;
+  display:inline-block;
+  padding:0 4px;
+  height:16px;
+  line-height:16px;
+}
+
+.all_day_event:before {
+  content: "✔";
+  padding:0 2px;
+  color:#aa0000;
+  background-color:#550000;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Signin Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+
+
+
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+  <main class="form-signin">
+    <form>
+      <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">マイページ</h1>
+      <div class="form-group">
+        <label>ユーザー名</label>
+        <input type="text" class="form-control" style="width: 100%;">
+        <label>メールアドレス</label>
+        <input type="text" class="form-control" style="width: 100%;">
+        <label>会社名</label>
+        <input type="text" class="form-control">
+      </div>
+      <label for="inputHelpBlock" class="form-label">パスワード</label>
+      <input type="password" id="inputHelpBlock" class="form-control" aria-describedby="passwordHelpBlock">
+      <div id="passwordHelpBlock" class="form-text">パスワードは、文字と数字を含めて8～20文字で、空白、特殊文字、絵文字を含むことはできません。</div>
+
+      <!-- <input type="checkbox" value="remember-me"> Remember me -->
+
+      <button class="w-100 btn btn-lg btn btn-primary" type="submit">
+        <a href="../home/index.html" target="_self">前の画面に戻る</a>
+      </button>
+      <button class="w-100 my-1 btn btn-lg btn btn-success" type="submit" onclick="return confirm('更新しますか?');">
+        <a href="../home/index.html" target="_self">更新する</a>
+      </button>
+
+      <button class="w-100  btn btn-lg btn btn-secondary" type="submit" onclick="return confirm('退会しますか?');">
+        <a href="../top/index.html" target="_self">退会する</a>
+      </button>
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+    </form>
+  </main>
+  <script src="bootstrap.js"></script>
+
+
+</body>
+
+</html>
